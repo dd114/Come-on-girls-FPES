@@ -18,6 +18,12 @@ import generalPhoto1 from './photos/general/generalPhoto1.jpg'
 import generalPhoto2 from './photos/general/generalPhoto2.jpg'
 import generalPhoto3 from './photos/general/generalPhoto3.jpg'
 import generalPhoto4 from './photos/general/generalPhoto4.jpg'
+import generalPhoto5 from './photos/general/generalPhoto5.jpg'
+import generalPhoto6 from './photos/general/generalPhoto6.jpg'
+import generalPhoto7 from './photos/general/generalPhoto7.jpg'
+import generalPhoto8 from './photos/general/generalPhoto8.jpg'
+import generalPhoto9 from './photos/general/generalPhoto9.jpg'
+import generalPhoto10 from './photos/general/generalPhoto10.jpg'
 
 import diana1 from './photos/diana1.jpg'
 import diana2 from './photos/diana2.jpg'
@@ -88,7 +94,8 @@ const App = () => {
                                         // subtitle="subtitle"
                                         // header={<div>Привет!<br/>На проводе команда девушек с факультета защиты в чрезвычайных ситуациях!</div>}
                                         header="Привет🔥 С вами команда девушек факультета защиты в чрезвычайных ситуациях!"
-                                        text={<div>Участницы нашей команды абсолютно уникальны, у каждой есть свои интересы и увлечения.<br/>Давайте же узнаем о каждой из них больше!</div>}
+                                        text={<div>Участницы нашей команды абсолютно уникальны, у каждой есть свои
+                                            интересы и увлечения.<br/>Давайте же узнаем о каждой из них больше!</div>}
                                         // caption="Photo by Siyuan on Unsplash"
                                         // maxHeight={1500}
                                     />
@@ -110,7 +117,7 @@ const App = () => {
                                 >
 
 
-                                    <Gallery slideWidth="90%" bullets="dark">
+                                    <Gallery slideWidth="custom" bullets="dark">
                                         <img
                                             src={diana1}
                                             style={{display: "block"}}
@@ -150,7 +157,7 @@ const App = () => {
                                     // description=""
                                     mode="card"
                                 >
-                                    <Gallery slideWidth="90%" bullets="dark">
+                                    <Gallery slideWidth="custom" bullets="dark">
                                         <img
                                             src={ksusha2}
                                             style={{display: "block"}}
@@ -189,7 +196,7 @@ const App = () => {
                                     //                                 description=""
                                     mode="card"
                                 >
-                                    <Gallery slideWidth="90%" bullets="dark">
+                                    <Gallery slideWidth="custom" bullets="dark">
                                         <img
                                             src={camilla2}
                                             style={{display: "block"}}
@@ -220,7 +227,6 @@ const App = () => {
                                     </Card>
 
 
-
                                 </Group>
 
                                 <Group
@@ -230,7 +236,7 @@ const App = () => {
                                     //                                 description=""
                                     mode="card"
                                 >
-                                    <Gallery slideWidth="90%" bullets="dark">
+                                    <Gallery slideWidth="custom" bullets="dark">
                                         <img
                                             src={kristina1}
                                             style={{display: "block"}}
@@ -261,7 +267,6 @@ const App = () => {
                                     </Card>
 
 
-
                                 </Group>
 
                                 <Group
@@ -271,7 +276,10 @@ const App = () => {
                                     // description=""
                                     mode="card"
                                 >
-                                    <Gallery slideWidth="90%" bullets="dark">
+                                    <Gallery
+                                        slideWidth="custom"
+                                        bullets="dark"
+                                    >
                                         <img
                                             src={katya2}
                                             style={{display: "block"}}
@@ -300,23 +308,59 @@ const App = () => {
                                     </Card>
 
 
-
                                 </Group>
+
 
                                 <Group
                                     header={<Header>Карусель общих фоток</Header>}
                                     description="А тут вообще нужно какое-то описание?"
                                     mode="card"
                                 >
-                                    <Gallery slideWidth="90%" bullets="dark">
+                                    <Gallery
+                                        slideWidth="90%"
+                                        bullets="dark"
+                                        // align="left"
+                                        slideWidth="custom"
+                                    >
                                         <img
                                             src={generalPhoto2}
                                             style={{display: "block"}}
                                         />
+
                                         <img
-                                            src={generalPhoto1}
+                                            src={generalPhoto5}
                                             style={{display: "block"}}
                                         />
+
+                                        <img
+                                            src={generalPhoto6}
+                                            style={{display: "block"}}
+                                        />
+
+                                        <img
+                                            src={generalPhoto9}
+                                            style={{display: "block"}}
+                                        />
+
+                                        <img
+                                            src={generalPhoto8}
+                                            style={{display: "block"}}
+                                        />
+
+                                        <img
+                                            src={generalPhoto7}
+                                            style={{display: "block"}}
+                                        />
+
+                                        <img
+                                            src={generalPhoto10}
+                                            style={{display: "block"}}
+                                        />
+
+                                        {/*<img*/}
+                                        {/*    src={generalPhoto1}*/}
+                                        {/*    style={{display: "block"}}*/}
+                                        {/*/>*/}
                                         {/*<img*/}
                                         {/*    src={generalPhoto3}*/}
                                         {/*    style={{display: "block"}}*/}
@@ -342,7 +386,6 @@ const App = () => {
                                     {/*</CardGrid>*/}
 
                                 </Group>
-
                             </CardGrid>
 
 
