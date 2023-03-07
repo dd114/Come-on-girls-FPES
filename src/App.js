@@ -50,8 +50,8 @@ const App = () => {
     const [appearance, setAppearance] = useState('light')
     // const [activePanel, setActivePanel] = useState('home');
     const [fetchedUser, setUser] = useState(null);
-    // const [popout, setPopout] = useState(<ScreenSpinner size='large' />)
-    const [popout, setPopout] = useState(null) // for developing
+    const [popout, setPopout] = useState(<ScreenSpinner size='large' />)
+    // const [popout, setPopout] = useState(null) // for developing
 
     useEffect(() => {
         bridge.subscribe(({detail: {type, data}}) => {
@@ -63,9 +63,12 @@ const App = () => {
         });
 
         async function fetchData() {
-            const user = await bridge.send('VKWebAppGetUserInfo');
-            setUser(user);
+            const user = await bridge.send('VKWebAppGetUserInfo')
+            setUser(user)
             setPopout(null)
+
+            console.log(user)
+
         }
 
         fetchData();
@@ -93,7 +96,10 @@ const App = () => {
                                         src={generalPhoto4}
                                         // subtitle="subtitle"
                                         // header={<div>Привет!<br/>На проводе команда девушек с факультета защиты в чрезвычайных ситуациях!</div>}
-                                        header="Привет🔥 С вами команда девушек факультета защиты в чрезвычайных ситуациях!"
+                                        header={
+                                            fetchedUser ? `Привет ${fetchedUser.first_name}! С тобой команда девушек факультета защиты в чрезвычайных ситуациях!🔥`
+                                                : `Привет🔥 С тобой команда девушек факультета защиты в чрезвычайных ситуациях!`
+                                        }
                                         text={<div>Участницы нашей команды абсолютно уникальны, у каждой есть свои
                                             интересы и увлечения.<br/>Давайте же узнаем о каждой из них больше!</div>}
                                         // caption="Photo by Siyuan on Unsplash"
@@ -324,8 +330,8 @@ const App = () => {
 
 
                                 <Group
-                                    header={<Header>Карусель общих фоток</Header>}
-                                    description="А тут вообще нужно какое-то описание?"
+                                    header={<Header>А ну-ка девушки ФЗЧС</Header>}
+                                    // description="А тут вообще нужно какое-то описание?"
                                     mode="card"
                                 >
                                     <Gallery
@@ -354,12 +360,12 @@ const App = () => {
                                         />
 
                                         <img
-                                            src={generalPhoto8}
+                                            src={generalPhoto7}
                                             style={{display: "block"}}
                                         />
 
                                         <img
-                                            src={generalPhoto7}
+                                            src={generalPhoto8}
                                             style={{display: "block"}}
                                         />
 
@@ -381,20 +387,23 @@ const App = () => {
 
 
                                 <Group>
-                                    <CardGrid size="l">
+                                    {/*<CardGrid size="l">*/}
 
                                         <ContentCard
                                             onClick={() => {
                                             }}
                                             src={generalPhoto3}
-                                            subtitle="Еще одна общая фотка?"
-                                            header="Уау, какой заголовок"
-                                            text="Мини текст под"
-                                            caption="И подпись еще чуть меньше"
+                                            subtitle={
+                                                fetchedUser ? fetchedUser.sex === 2 ? `Дорогой ${fetchedUser.first_name}!`
+                                                : `Дорогая ${fetchedUser.first_name}!` : ""
+                                            }
+                                            header="Мы будем ждать тебя и твоей поддержки"
+                                            text="16 марта, 18:00 в концертном зале имени М.И. Рабиновича"
+                                            // caption="16 марта, 18:00 в концертном зале имени М.И. Рабиновича"
                                             // maxHeight={1500}
                                         />
 
-                                    </CardGrid>
+                                    {/*</CardGrid>*/}
 
                                 </Group>
 
