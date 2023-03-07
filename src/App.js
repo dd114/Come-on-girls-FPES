@@ -97,28 +97,32 @@ const App = () => {
                             </Group>
 
                             {/*<Separator style={{ margin: "12px 0" }} />*/}
+
                             <CardGrid size="l">
-                            <Group
-                                header={<Header mode="primary"><div style={{fontSize: 35, padding: "5px 0 10px 0"}}>Диана</div></Header>}
-                                // description=""
-                                mode="card"
-                            >
+
+                                <Group
+                                    header={<Header mode="primary">
+                                        <div style={{fontSize: 35, padding: "5px 0 10px 0"}}>Диана</div>
+                                    </Header>}
+                                    // description=""
+                                    mode="card"
+                                >
 
 
-                                <Gallery slideWidth="90%" bullets="dark">
-                                    <img
-                                        src={diana1}
-                                        style={{display: "block"}}
-                                    />
-                                    <img
-                                        src={diana2}
-                                        style={{display: "block"}}
-                                    />
-                                    <img
-                                        src={diana3}
-                                        style={{display: "block"}}
-                                    />
-                                </Gallery>
+                                    <Gallery slideWidth="90%" bullets="dark">
+                                        <img
+                                            src={diana1}
+                                            style={{display: "block"}}
+                                        />
+                                        <img
+                                            src={diana2}
+                                            style={{display: "block"}}
+                                        />
+                                        <img
+                                            src={diana3}
+                                            style={{display: "block"}}
+                                        />
+                                    </Gallery>
 
 
                                     <Card>
@@ -135,150 +139,163 @@ const App = () => {
                                     </Card>
 
 
-
-                            </Group>
-                            </CardGrid>
+                                </Group>
 
 
-                            <Group
-                                header={<Header><div style={{fontSize: 35, padding: "5px 0 10px 0"}}>Ксюша</div></Header>}
-                                // description=""
-                                mode="card"
-                            >
-                                <Gallery slideWidth="90%" bullets="dark">
-                                    <img
-                                        src={ksusha2}
-                                        style={{display: "block"}}
-                                    />
-                                    <img
-                                        src={ksusha1}
-                                        style={{display: "block"}}
-                                    />
-                                    <img
-                                        src={ksusha3}
-                                        style={{display: "block"}}
-                                    />
-                                </Gallery>
+                                <Group
+                                    header={<Header>
+                                        <div style={{fontSize: 35, padding: "5px 0 10px 0"}}>Ксюша</div>
+                                    </Header>}
+                                    // description=""
+                                    mode="card"
+                                >
+                                    <Gallery slideWidth="90%" bullets="dark">
+                                        <img
+                                            src={ksusha2}
+                                            style={{display: "block"}}
+                                        />
+                                        <img
+                                            src={ksusha1}
+                                            style={{display: "block"}}
+                                        />
+                                        <img
+                                            src={ksusha3}
+                                            style={{display: "block"}}
+                                        />
+                                    </Gallery>
 
-                                <Div>
-                                    Любимый цвет: Бордовый<br/>
-                                    Знак зодиака: Близнецы<br/>
-                                    Любимая еда: Мамина<br/>
-                                    Любимый исполнитель/группа: Pyrokinesis, Три дня дождя<br/>
-                                </Div>
+                                    <Card>
+                                        {/*<div style={{ height: 96 }} />*/}
+                                        {/*<div style={{height: 15}}/>*/}
+                                        {/*<div style={{height: 15}}/>*/}
 
-                            </Group>
+                                        <Div>
+                                            Любимый цвет: Бордовый<br/>
+                                            Знак зодиака: Близнецы<br/>
+                                            Любимая еда: Мамина<br/>
+                                            Любимый исполнитель/группа: Pyrokinesis, Три дня дождя<br/>
+                                        </Div>
+                                    </Card>
 
-                            <Group
-                                header={<Header><div style={{fontSize: 35, padding: "5px 0 10px 0"}}>Камилла</div></Header>}
-                                //                                 description=""
-                                mode="card"
-                            >
-                                <Gallery slideWidth="90%" bullets="dark">
-                                    <img
-                                        src={camilla2}
-                                        style={{display: "block"}}
-                                    />
-                                    <img
-                                        src={camilla1}
-                                        style={{display: "block"}}
-                                    />
-                                    <img
-                                        src={camilla3}
-                                        style={{display: "block"}}
-                                    />
-                                </Gallery>
+                                </Group>
 
-                                <Div>
-                                    Любимый цвет: Фиолетовый<br/>
-                                    Знак зодиака: Дева<br/>
-                                    Любимая еда: Паста<br/>
-                                    Любимый исполнитель/группа: Сплин, Hollywood Undead<br/>
-                                </Div>
+                                <Group
+                                    header={<Header>
+                                        <div style={{fontSize: 35, padding: "5px 0 10px 0"}}>Камилла</div>
+                                    </Header>}
+                                    //                                 description=""
+                                    mode="card"
+                                >
+                                    <Gallery slideWidth="90%" bullets="dark">
+                                        <img
+                                            src={camilla2}
+                                            style={{display: "block"}}
+                                        />
+                                        <img
+                                            src={camilla1}
+                                            style={{display: "block"}}
+                                        />
+                                        <img
+                                            src={camilla3}
+                                            style={{display: "block"}}
+                                        />
+                                    </Gallery>
 
-                            </Group>
+                                    <Div>
+                                        Любимый цвет: Фиолетовый<br/>
+                                        Знак зодиака: Дева<br/>
+                                        Любимая еда: Паста<br/>
+                                        Любимый исполнитель/группа: Сплин, Hollywood Undead<br/>
+                                    </Div>
 
-                            <Group
-                                header={<Header><div style={{fontSize: 35, padding: "5px 0 10px 0"}}>Кристина</div></Header>}
-                                //                                 description=""
-                                mode="card"
-                            >
-                                <Gallery slideWidth="90%" bullets="dark">
-                                    <img
-                                        src={kristina1}
-                                        style={{display: "block"}}
-                                    />
-                                    <img
-                                        src={kristina2}
-                                        style={{display: "block"}}
-                                    />
-                                    <img
-                                        src={kristina3}
-                                        style={{display: "block"}}
-                                    />
-                                </Gallery>
+                                </Group>
 
-                                <Div>
-                                    Любимый цвет: Черный, оранжевый<br/>
-                                    Знак зодиака: Скорпион<br/>
-                                    Любимая еда: Вок, лапша<br/>
-                                    Любимый исполнитель/группа: Stray Kids<br/>
-                                </Div>
+                                <Group
+                                    header={<Header>
+                                        <div style={{fontSize: 35, padding: "5px 0 10px 0"}}>Кристина</div>
+                                    </Header>}
+                                    //                                 description=""
+                                    mode="card"
+                                >
+                                    <Gallery slideWidth="90%" bullets="dark">
+                                        <img
+                                            src={kristina1}
+                                            style={{display: "block"}}
+                                        />
+                                        <img
+                                            src={kristina2}
+                                            style={{display: "block"}}
+                                        />
+                                        <img
+                                            src={kristina3}
+                                            style={{display: "block"}}
+                                        />
+                                    </Gallery>
 
-                            </Group>
+                                    <Div>
+                                        Любимый цвет: Черный, оранжевый<br/>
+                                        Знак зодиака: Скорпион<br/>
+                                        Любимая еда: Вок, лапша<br/>
+                                        Любимый исполнитель/группа: Stray Kids<br/>
+                                    </Div>
 
-                            <Group
-                                header={<Header><div style={{fontSize: 35, padding: "5px 0 10px 0"}}>Катя</div></Header>}
-                                // description=""
-                                mode="card"
-                            >
-                                <Gallery slideWidth="90%" bullets="dark">
-                                    <img
-                                        src={katya2}
-                                        style={{display: "block"}}
-                                    />
-                                    <img
-                                        src={katya3}
-                                        style={{display: "block"}}
-                                    />
-                                    <img
-                                        src={katya1}
-                                        style={{display: "block"}}
-                                    />
-                                </Gallery>
+                                </Group>
 
-                                <Div>
-                                    Любимый цвет: Темно-синий<br/>
-                                    Знак зодиака: Рак<br/>
-                                    Любимая еда: Солянка<br/>
-                                    Любимый исполнитель/группа: The neighborhood, crystal castles<br/>
-                                </Div>
+                                <Group
+                                    header={<Header>
+                                        <div style={{fontSize: 35, padding: "5px 0 10px 0"}}>Катя</div>
+                                    </Header>}
+                                    // description=""
+                                    mode="card"
+                                >
+                                    <Gallery slideWidth="90%" bullets="dark">
+                                        <img
+                                            src={katya2}
+                                            style={{display: "block"}}
+                                        />
+                                        <img
+                                            src={katya3}
+                                            style={{display: "block"}}
+                                        />
+                                        <img
+                                            src={katya1}
+                                            style={{display: "block"}}
+                                        />
+                                    </Gallery>
 
-                            </Group>
+                                    <Div>
+                                        Любимый цвет: Темно-синий<br/>
+                                        Знак зодиака: Рак<br/>
+                                        Любимая еда: Солянка<br/>
+                                        Любимый исполнитель/группа: The neighborhood, crystal castles<br/>
+                                    </Div>
 
-                            <Group
-                                header={<Header>Карусель общих фоток</Header>}
-                                description="А тут вообще нужно какое-то описание?"
-                                mode="card"
-                            >
-                                <Gallery slideWidth="90%" bullets="dark">
-                                    <img
-                                        src={generalPhoto2}
-                                        style={{display: "block"}}
-                                    />
-                                    <img
-                                        src={generalPhoto1}
-                                        style={{display: "block"}}
-                                    />
-                                    {/*<img*/}
-                                    {/*    src={generalPhoto3}*/}
-                                    {/*    style={{display: "block"}}*/}
-                                    {/*/>*/}
-                                </Gallery>
-                            </Group>
+                                </Group>
 
-                            <Group>
-                                <CardGrid size="l">
+                                <Group
+                                    header={<Header>Карусель общих фоток</Header>}
+                                    description="А тут вообще нужно какое-то описание?"
+                                    mode="card"
+                                >
+                                    <Gallery slideWidth="90%" bullets="dark">
+                                        <img
+                                            src={generalPhoto2}
+                                            style={{display: "block"}}
+                                        />
+                                        <img
+                                            src={generalPhoto1}
+                                            style={{display: "block"}}
+                                        />
+                                        {/*<img*/}
+                                        {/*    src={generalPhoto3}*/}
+                                        {/*    style={{display: "block"}}*/}
+                                        {/*/>*/}
+                                    </Gallery>
+                                </Group>
+
+
+                                <Group>
+                                    {/*<CardGrid size="l">*/}
 
                                     <ContentCard
                                         onClick={() => {
@@ -286,14 +303,16 @@ const App = () => {
                                         src={generalPhoto3}
                                         subtitle="Еще одна общая фотка?"
                                         header="Уау, какой заголовок"
-                                        text="И мини текст под"
-                                        caption="И такая же небольшая подпись"
+                                        text="Мини текст под"
+                                        caption="И подпись еще чуть меньше"
                                         // maxHeight={1500}
                                     />
 
-                                </CardGrid>
+                                    {/*</CardGrid>*/}
 
-                            </Group>
+                                </Group>
+
+                            </CardGrid>
 
 
                         </Panel>
