@@ -8,7 +8,7 @@ import {
     ConfigProvider,
     SplitLayout,
     SplitCol,
-    Panel, PanelHeader, Group, Cell, ContentCard, CardGrid, Header, Gallery, Separator, Div
+    Panel, PanelHeader, Group, Cell, ContentCard, CardGrid, Header, Gallery, Separator, Div, Card
 } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
 
@@ -75,7 +75,9 @@ const App = () => {
                     <SplitLayout popout={popout}>
                         <Panel id="panel1">
                             <PanelHeader>А ну-ка ФЗЧС</PanelHeader>
-                            <Group>
+                            <Group
+                                // header={<Header mode="primary"><div style={{fontSize: 35, padding: "0px 0 10px 0"}}>Привет!</div></Header>}
+                            >
                                 <CardGrid size="l">
 
                                     <ContentCard
@@ -83,6 +85,7 @@ const App = () => {
                                         }}
                                         src={generalPhoto1}
                                         // subtitle="subtitle"
+                                        // header={<div>Привет!<br/>На проводе команда девушек с факультета защиты в чрезвычайных ситуациях!</div>}
                                         header="Привет! На проводе команда девушек с факультета защиты в чрезвычайных ситуациях!"
                                         text="Девушки с нашей команды абсолютно уникальны, у каждой есть свои интересы и увлечения. Давайте же узнаем о каждой из них больше!"
                                         // caption="Photo by Siyuan on Unsplash"
@@ -94,12 +97,14 @@ const App = () => {
                             </Group>
 
                             {/*<Separator style={{ margin: "12px 0" }} />*/}
-
+                            <CardGrid size="l">
                             <Group
-                                header={<Header mode="primary">Диана</Header>}
+                                header={<Header mode="primary"><div style={{fontSize: 35, padding: "5px 0 10px 0"}}>Диана</div></Header>}
                                 // description=""
                                 mode="card"
                             >
+
+
                                 <Gallery slideWidth="90%" bullets="dark">
                                     <img
                                         src={diana1}
@@ -115,17 +120,28 @@ const App = () => {
                                     />
                                 </Gallery>
 
-                                <Div>
-                                    Любимый цвет: Красный<br/>
-                                    Знак зодиака: Овен<br/>
-                                    Любимая еда: Все блюда где есть яица<br/>
-                                    Любимый исполнитель/ группа: Муслим Магомаев, ABBA<br/>
-                                </Div>
+
+                                    <Card>
+                                        {/*<div style={{ height: 96 }} />*/}
+                                        {/*<div style={{height: 15}}/>*/}
+                                        {/*<div style={{height: 15}}/>*/}
+
+                                        <Div>
+                                            Любимый цвет: Красный<br/>
+                                            Знак зодиака: Овен<br/>
+                                            Любимая еда: Все блюда где есть яица<br/>
+                                            Любимый исполнитель/группа: Муслим Магомаев, ABBA<br/>
+                                        </Div>
+                                    </Card>
+
+
 
                             </Group>
+                            </CardGrid>
+
 
                             <Group
-                                header={<Header>Ксюша</Header>}
+                                header={<Header><div style={{fontSize: 35, padding: "5px 0 10px 0"}}>Ксюша</div></Header>}
                                 // description=""
                                 mode="card"
                             >
@@ -148,13 +164,13 @@ const App = () => {
                                     Любимый цвет: Бордовый<br/>
                                     Знак зодиака: Близнецы<br/>
                                     Любимая еда: Мамина<br/>
-                                    Любимый исполнитель/ группа: Pyrokinesis, Три дня дождя<br/>
+                                    Любимый исполнитель/группа: Pyrokinesis, Три дня дождя<br/>
                                 </Div>
 
                             </Group>
 
                             <Group
-                                header={<Header>Камилла</Header>}
+                                header={<Header><div style={{fontSize: 35, padding: "5px 0 10px 0"}}>Камилла</div></Header>}
                                 //                                 description=""
                                 mode="card"
                             >
@@ -183,7 +199,7 @@ const App = () => {
                             </Group>
 
                             <Group
-                                header={<Header>Кристина</Header>}
+                                header={<Header><div style={{fontSize: 35, padding: "5px 0 10px 0"}}>Кристина</div></Header>}
                                 //                                 description=""
                                 mode="card"
                             >
@@ -206,13 +222,13 @@ const App = () => {
                                     Любимый цвет: Черный, оранжевый<br/>
                                     Знак зодиака: Скорпион<br/>
                                     Любимая еда: Вок, лапша<br/>
-                                    Любимый исполнитель/ группа: Stray Kids<br/>
+                                    Любимый исполнитель/группа: Stray Kids<br/>
                                 </Div>
 
                             </Group>
 
                             <Group
-                                header={<Header>Катя</Header>}
+                                header={<Header><div style={{fontSize: 35, padding: "5px 0 10px 0"}}>Катя</div></Header>}
                                 // description=""
                                 mode="card"
                             >
@@ -235,7 +251,7 @@ const App = () => {
                                     Любимый цвет: Темно-синий<br/>
                                     Знак зодиака: Рак<br/>
                                     Любимая еда: Солянка<br/>
-                                    Любимый исполнитель/ группа: The neighborhood, crystal castles<br/>
+                                    Любимый исполнитель/группа: The neighborhood, crystal castles<br/>
                                 </Div>
 
                             </Group>
@@ -271,7 +287,7 @@ const App = () => {
                                         subtitle="Еще одна общая фотка?"
                                         header="Уау, какой заголовок"
                                         text="И мини текст под"
-                                        // caption="caption - Photo by Siyuan on Unsplash"
+                                        caption="И такая же небольшая подпись"
                                         // maxHeight={1500}
                                     />
 
