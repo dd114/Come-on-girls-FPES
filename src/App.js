@@ -50,7 +50,7 @@ const App = () => {
     const [appearance, setAppearance] = useState('light')
     // const [activePanel, setActivePanel] = useState('home');
     const [fetchedUser, setUser] = useState(null);
-    const [popout, setPopout] = useState(<ScreenSpinner size='large' />)
+    const [popout, setPopout] = useState(<ScreenSpinner size='large'/>)
     // const [popout, setPopout] = useState(null) // for developing
 
     useEffect(() => {
@@ -101,7 +101,8 @@ const App = () => {
                                                 : `Привет🔥 С тобой команда девушек факультета защиты в чрезвычайных ситуациях!`
                                         }
                                         text={<div>Участницы нашей команды абсолютно уникальны, у каждой есть свои
-                                            интересы и увлечения.<br/>Давайте же узнаем о каждой из них больше!</div>}
+                                            интересы и увлечения.<br/>Давайте же узнаем каждую из них немного ближе!
+                                        </div>}
                                         // caption="Photo by Siyuan on Unsplash"
                                         // maxHeight={1500}
                                     />
@@ -389,19 +390,19 @@ const App = () => {
                                 <Group>
                                     {/*<CardGrid size="l">*/}
 
-                                        <ContentCard
-                                            onClick={() => {
-                                            }}
-                                            src={generalPhoto3}
-                                            subtitle={
-                                                fetchedUser ? fetchedUser.sex === 2 ? `Дорогой ${fetchedUser.first_name}!`
+                                    <ContentCard
+                                        onClick={() => {
+                                        }}
+                                        src={generalPhoto3}
+                                        subtitle={
+                                            fetchedUser ? fetchedUser.sex === 2 ? `Дорогой ${fetchedUser.first_name}!`
                                                 : `Дорогая ${fetchedUser.first_name}!` : ""
-                                            }
-                                            header="Мы будем ждать тебя и твоей поддержки"
-                                            text="16 марта, 18:00 в концертном зале имени М.И. Рабиновича"
-                                            // caption="16 марта, 18:00 в концертном зале имени М.И. Рабиновича"
-                                            // maxHeight={1500}
-                                        />
+                                        }
+                                        header="Мы будем ждать тебя и твоей поддержки"
+                                        text="16 марта, 18:00 в концертном зале имени М.И. Рабиновича"
+                                        // caption="16 марта, 18:00 в концертном зале имени М.И. Рабиновича"
+                                        // maxHeight={1500}
+                                    />
 
                                     {/*</CardGrid>*/}
 
