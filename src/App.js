@@ -85,7 +85,7 @@ const App = () => {
                             <Group
                                 // header={<Header mode="primary"><div style={{fontSize: 35, padding: "0px 0 10px 0"}}>Привет!</div></Header>}
                             >
-                                <CardGrid size="l">
+                                <Div size="l">
 
                                     <ContentCard
                                         onClick={() => {
@@ -100,13 +100,13 @@ const App = () => {
                                         // maxHeight={1500}
                                     />
 
-                                </CardGrid>
+                                </Div>
 
                             </Group>
 
                             {/*<Separator style={{ margin: "12px 0" }} />*/}
 
-                            <CardGrid size="l">
+                            <Div size="l">
 
                                 <Group
                                     header={<Header mode="primary">
@@ -117,7 +117,10 @@ const App = () => {
                                 >
 
 
-                                    <Gallery slideWidth="custom" bullets="dark">
+                                    <Gallery
+                                        slideWidth="90%"
+                                        bullets="dark"
+                                    >
                                         <img
                                             src={diana1}
                                             style={{display: "block"}}
@@ -157,7 +160,10 @@ const App = () => {
                                     // description=""
                                     mode="card"
                                 >
-                                    <Gallery slideWidth="custom" bullets="dark">
+                                    <Gallery
+                                        slideWidth="90%"
+                                        bullets="dark"
+                                    >
                                         <img
                                             src={ksusha2}
                                             style={{display: "block"}}
@@ -196,7 +202,10 @@ const App = () => {
                                     //                                 description=""
                                     mode="card"
                                 >
-                                    <Gallery slideWidth="custom" bullets="dark">
+                                    <Gallery
+                                        slideWidth="90%"
+                                        bullets="dark"
+                                    >
                                         <img
                                             src={camilla2}
                                             style={{display: "block"}}
@@ -236,7 +245,10 @@ const App = () => {
                                     //                                 description=""
                                     mode="card"
                                 >
-                                    <Gallery slideWidth="custom" bullets="dark">
+                                    <Gallery
+                                        slideWidth="90%"
+                                        bullets="dark"
+                                    >
                                         <img
                                             src={kristina1}
                                             style={{display: "block"}}
@@ -277,7 +289,7 @@ const App = () => {
                                     mode="card"
                                 >
                                     <Gallery
-                                        slideWidth="custom"
+                                        slideWidth="90%"
                                         bullets="dark"
                                     >
                                         <img
@@ -320,7 +332,6 @@ const App = () => {
                                         slideWidth="90%"
                                         bullets="dark"
                                         // align="left"
-                                        slideWidth="custom"
                                     >
                                         <img
                                             src={generalPhoto2}
@@ -370,23 +381,24 @@ const App = () => {
 
 
                                 <Group>
-                                    {/*<CardGrid size="l">*/}
+                                    <CardGrid size="l">
 
-                                    <ContentCard
-                                        onClick={() => {
-                                        }}
-                                        src={generalPhoto3}
-                                        subtitle="Еще одна общая фотка?"
-                                        header="Уау, какой заголовок"
-                                        text="Мини текст под"
-                                        caption="И подпись еще чуть меньше"
-                                        // maxHeight={1500}
-                                    />
+                                        <ContentCard
+                                            onClick={() => {
+                                            }}
+                                            src={generalPhoto3}
+                                            subtitle="Еще одна общая фотка?"
+                                            header="Уау, какой заголовок"
+                                            text="Мини текст под"
+                                            caption="И подпись еще чуть меньше"
+                                            // maxHeight={1500}
+                                        />
 
-                                    {/*</CardGrid>*/}
+                                    </CardGrid>
 
                                 </Group>
-                            </CardGrid>
+
+                            </Div>
 
 
                         </Panel>
